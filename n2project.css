@@ -1,0 +1,87 @@
+body {
+    background-color: #1a1a2e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: white;
+    color: white;
+}
+
+.link {
+    color: #fff;
+    text-decoration-line: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link a,
+.link button {
+    margin: 10px;
+}
+
+.link a:hover,
+.link button:hover {
+    color: aqua;
+}
+
+.master {
+    margin: 20px;
+    background-color: #333;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: grid;
+}
+
+.positiong {
+    padding: 20px;
+    text-align: center;
+}
+
+.img {
+    border-radius: 100%;
+    border: 1px solid #000;
+    width: 120px;
+    height: 120px;
+    background-image: url('cabbc16f81729d1ee9ad62b326ef2267.jpg');
+    background-size: cover;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centers the image horizontally */
+
+
+.aboutme {
+    text-align: center;
+}
+
+.goal {
+    border: 3px solid #000;
+    width: 200px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #000;
+}
+
+.goal button:hover {
+    color: crimson;
+}
+
+@media (max-width: 768px) {
+    .link {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goal {
+        width: 100%;
+        margin: 20px auto;
+    }
+}
